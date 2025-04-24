@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>جاري التحويل...</title>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('code');
+      if (code) {
+        window.location.href = `https://script.google.com/macros/s/AKfycby4_HtmvlkQKAxxaAVoq_WmqEoZbEV9YooRAiTT1AMQLAcsv0vK89e-nxpfu8jplqJ6og/exec?code=${code}`;
+      } else {
+        document.write("رمز الدعوة غير موجود.");
+      }
+    </script>
+  </head>
+  <body>
+    <p>جاري التحويل...</p>
+  </body>
+</html>
